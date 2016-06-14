@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <Button
+    android:id="@+id/sendStart"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="Send start command"
+    android:onClick="sendStartCommand"
+    android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/sendStop"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Send stop command"
+        android:onClick="sendStopCommand"
+        android:layout_gravity="center_horizontal" />
+
+    <!--<ListView
+        android:id="@+id/messageList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>-->
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/graph" />
+
+</LinearLayout>
